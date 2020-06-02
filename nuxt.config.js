@@ -16,7 +16,7 @@ export default {
     ]
   },
   router: {
-    base: 'nuxt-ssr-gh-page'
+    base: 'nuxt-ssr-gh-pages'
   },
   /*
   ** Customize the progress-bar color
