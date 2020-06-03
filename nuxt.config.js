@@ -1,5 +1,6 @@
+const base = 'gh-pages' === process.env.NODE_ENV ? '/nuxt-ssr-gh-pages/' : '';
 
-export default {
+module.exports =  {
   mode: 'universal',
   /*
   ** Headers of the page
@@ -11,12 +12,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
   },
   router: {
-    base: 'nuxt-ssr-gh-pages'
+    base,
   },
   /*
   ** Customize the progress-bar color
